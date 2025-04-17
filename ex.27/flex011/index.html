@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: aquamarine;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 250px;
+            
+        }
+        div#cxA {
+            flex-shrink: 4;
+            flex-grow: 1;
+        }
+        div#cxB {
+            flex-shrink: 4;
+            flex-grow: 8;
+        }
+        div#cxC {
+            flex-shrink: 8;
+            flex-grow: 1;
+        }
+    /*Neste exemplo o C está encolhendo o dobro de A e B, já o B está crescendo 8 vezes mais que A e C.*/
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        
+    </div>
+</body>
+</html>

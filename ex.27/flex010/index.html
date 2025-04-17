@@ -9,25 +9,24 @@
             background-color: lightsalmon;
             display: flex;
             flex-flow: row nowrap;
-            /*Com nowrap não há quebra de linha,com wrap o conteúdo terá quebra de linha.*/
         }
         div.item {
             background-color: aquamarine;
+            text-align: center;
             border: 1px solid black;
-            flex-basis: 150px;
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
         }
+        /*Por padrão o flex-shrink:1 e o flex-grow:0 ou seja pode encolher e não pode crescer!*/
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">conteudo maior</div>
+        <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">Elemento maior ainda</div>
-        <div class="item">F</div>
-        <div class="item">Grande conteudo para testar flex-basis</div>
-        <div class="item">H</div>
+        
     </div>
 </body>
 </html>
